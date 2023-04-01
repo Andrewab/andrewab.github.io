@@ -1,0 +1,45 @@
+.header {
+  background-image: url("../../public/BackgroundWallpaper.webp");
+  background-repeat: no-repeat;
+  padding: 150px;
+  font-family:  Georgia;
+  color: white;
+  font-size: 24px;
+  font-style: oblique;
+  text-align: center;
+}
+
+.myBackground {
+  background-image: url("../../public/BackgroundWallpaper.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.myNavBar {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  background-color: #ddd;
+  color: rgb(231, 223, 223);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+
+}
+
+.myNavBarButton{
+  font-family:  Georgia;
+  color: rgb(4, 4, 4);
+  font-size: 24px;
+  font-style: bold;
+  text-align: center;
+
+}
+
+.myNavBarButton:active {
+  color: blue;
+  font-size: 20px;
+}
+
