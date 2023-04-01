@@ -1,15 +1,18 @@
 [
 {
-"title" : "This is the first paper\n",
-"body" : "This is a description of the first paper"
+"title" : "This is the first paper",
+"body" : "This is a description of the first paper",
+"link": "NO LINK ATM"
 },
 {
 "title" : "This is the second paper",
-"body" : "This is a description of the first paper"
+"body" : "This is a description of the second paper",
+"link": "NO LINK ATM"
 },
 {
 "title" : "This is the third paper",
-"body" : "This is a description of the first paper"
+"body" : "This is a description of the third paper",
+"link": "NO LINK ATM"
 }
 ]
 
