@@ -38,7 +38,30 @@
   }
   .paperWrapper {
     display: grid;
-    grid-template-columns: 0fr 1fr;
+    grid-template-columns: 0fr 2fr;
+  }
+  .leftWall {
+    position: sticky;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    width: 200px;
+    height: 200%;
+    background-color: gray;
+  }
+  .rightWall {
+    position: sticky;
+    top: 100px;
+    bottom: 0px;
+    right: 0px;
+    width: 200px;
+    height: 100%;
+    background-color: gray;
+  }
+  .mainGrid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-gap: 5px;
   }
   
   
