@@ -2,6 +2,7 @@
 .header {
     background: linear-gradient(to top, #345555, #345555, #242425);
     padding: 100px;
+    height: 200px;
     font-family:  Georgia;
     color: white;
     font-size: 24px;
@@ -9,7 +10,7 @@
     text-align: center;
   }
   .backButton {
-    position: fixed;
+    position: absolute;
     top: 20px;
     left: 20px;
     background-color: #ccc;
@@ -37,31 +38,33 @@
     display: flex;
   }
   .paperWrapper {
+    padding-left: 7%;
     display: grid;
     grid-template-columns: 0fr 2fr;
+    
   }
   .leftWall {
-    position: sticky;
-    top: 0px;
-    bottom: 0px;
+    position: absolute;
+    height: 100%;
     left: 0px;
-    width: 200px;
-    height: 200%;
+    top: 200px;
+    bottom: 0px;
+    width: 10%;
     background-color: gray;
   }
   .rightWall {
-    position: sticky;
-    top: 100px;
-    bottom: 0px;
-    right: 0px;
-    width: 200px;
+    position: absolute;
     height: 100%;
+    right: 0px;
+    top: 200px;
+    bottom: 0px;
+    width: 10%;
     background-color: gray;
   }
-  .mainGrid {
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-gap: 5px;
+  .mainBody {
+    position: relative;
+    height: 100%;
+    width: 100%;
   }
   
   

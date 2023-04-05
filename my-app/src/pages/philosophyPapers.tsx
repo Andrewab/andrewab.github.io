@@ -16,25 +16,24 @@ export default function myPage() {
         
       </Head>
       <header className={philPageStyles.header}>
-    <div>My Philosphy Papers</div>
+    <div>My Philosophy Papers</div>
 
       <Link href='/' className={philPageStyles.backButton}>
       <div className={philPageStyles.backButtonA}>Home</div>
       </Link>
     </header>
-
-      <main>
-          <div className={philPageStyles.leftWall}></div>
-          <PaperBlock/>
-          <div className={philPageStyles.rightWall}></div>
-
-      </main>
+    <div className={philPageStyles.leftWall}></div>
+    <div className={philPageStyles.rightWall}></div>
+    <div className={philPageStyles.paperWrapper}>
+      <PaperBlock/>
+    </div>
+      
 
     </>
   )
 }
 
-
+//                    <PaperBlock/>
 /*
   return (
     <>
