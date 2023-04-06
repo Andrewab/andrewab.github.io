@@ -2,7 +2,7 @@ import Script from "next/script";
 import philPageStyles from '@/styles/philosophyPapersStyles.module.css';
 import useSWR from 'swr';
 import { useEffect, useState } from 'react';
-
+import Link from 'next/link';
 
 
 function PaperBlock () {
@@ -13,7 +13,7 @@ function PaperBlock () {
     useEffect(() => {
         async function fetchData() {
             try {
-                const response = await fetch('./data.txt');
+                const response = await fetch('./philosophyPapers.txt');
                 const data = await response.json();
                 setData(data);
                 setLoading(false);
@@ -34,7 +34,7 @@ function PaperBlock () {
         return (
         <div className={philPageStyles.paperWrapper}>
         {data.map(item => (
-            <div className={philPageStyles.paperBlock}>{item.title}<br></br><br></br>{item.body}</div>
+            <div className={philPageStyles.paperBlock}><Link className={philPageStyles.paperLink} href={item.link}>{item.title}</Link><br></br><br></br>{item.body}</div>
         ))}
         </div>
         );
