@@ -23,8 +23,7 @@ export default function myPage() {
   <Link href='/' className={philPageStyles.backButton}><div className={philPageStyles.backButtonA}>Home</div></Link>
     <div>My Philosophy Papers</div>
     </header>
-    <div className={philPageStyles.leftWall}></div>
-    <div className={philPageStyles.rightWall}></div>
+
     <div className={philPageStyles.paperWrapper}>
       <PaperBlock/>
     </div>

@@ -1,4 +1,60 @@
 body {
-    background-color: #ffffff;
+  background:linear-gradient(to top, #0000ff, #ffffff);
+  height: 100vh;
+margin: 0;
+}
+.wave-container {
+  position: relative;
+  width: 400px; /* adjust the width as needed */
+  height: 400px; /* adjust the height as needed */
+  margin: 50px auto;
+}
+
+.wave {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 400px; /* adjust the width as needed */
+  height: 400px; /* adjust the height as needed */
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.wave::before,
+.wave::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 200%;
+  height: 200%;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.5;
+  animation-name: wave-animation;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.wave::before {
+  left: -50%;
+  animation-delay: 0s;
+}
+
+.wave::after {
+  left: 0%;
+  animation-delay: 2s;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: translate(-50%, 0) scale(1);
   }
-  
+  50% {
+    transform: translate(-50%, -50%) scale(0.5);
+  }
+  100% {
+    transform: translate(-50%, 0) scale(1);
+  }
+}
