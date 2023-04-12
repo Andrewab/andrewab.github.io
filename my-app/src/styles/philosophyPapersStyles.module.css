@@ -1,5 +1,6 @@
 /* Gradient background */
 .header {
+    position: relative;
     background: linear-gradient(to top, #345555, #345555, #242425);
     padding: 100px;
     height: 200px;
@@ -8,7 +9,21 @@
     font-size: 24px;
     font-style: oblique;
     text-align: center;
+    z-index: 3;
   }
+  .myBackground {
+    position: relative;
+    background-color: black;
+    background-image: linear-gradient(45deg, transparent 20%, white 25%, transparent 25%),
+        linear-gradient(-90deg, transparent 20%, white 25%, transparent 25%),
+        linear-gradient(-45deg, transparent 75%, white 80%, transparent 0),
+        radial-gradient(#345555, 4px, transparent 0);
+    background-size: 30px 30px, 30px 30px;
+    height: 100%;
+  }
+  
+  
+  
   .backButton {
     position: absolute;
     top: 20px;
@@ -16,18 +31,23 @@
     background-color: #ccc;
     padding: 10px;
     border-radius: 5px;
+    width: 55px;
+    height: 35px;
+    z-index: 1;
   }
   
   .backButtonA {
+    position: absolute;
     text-decoration: none;
     color: #000;
     font-style: normal;
     font-size: 12px;
+    z-index: 1;
   }
 
   .paperBlock {
     margin-top: 5px;
-    padding: 10px;
+    padding: 10px;  
     width: 100%;
     max-width: 400px;
     height: 400px;
@@ -39,10 +59,6 @@
     background-color: #b0c4de;
     overflow: auto;
     flex-direction: column;
-
-
-
-
   }
   .paperWrapper {
     display: grid;
@@ -53,22 +69,25 @@
     
   }
   .leftWall {
+    background: linear-gradient(to top, #ffffff , #345555,#345555);
     position: absolute;
-    height: 120%;
+    height: 1000px;
     left: 0px;
-    top: 200px;
     bottom: 0px;
     width: 7%;
     background-color: gray;
+    z-index: 2;
   }
   .rightWall {
+    background: linear-gradient(to top, #ffffff , #345555,#345555);
     position: absolute;
-    height: 120%;
+    height: 100%;
     right: 0px;
-    top: 200px;
+
     bottom: 0px;
     width: 5%;
     background-color: gray;
+    z-index: 2;
   }
   .mainBody {
     position: relative;
@@ -77,6 +96,10 @@
   }
 .paperLink:hover {
     color:#1E90FF;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
 }
   
   
