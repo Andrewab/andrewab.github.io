@@ -22,9 +22,10 @@ export default function Home() {
     <Link href='philosophyPapers'  className={styles.myNavBarButton}>My Philosophy Papers</Link>
     </div>
 	<div className={styles.waveContainer}>
-	<div className={`${styles.wave} waveRed`}></div>
-	<div className={styles.wave}></div>
-	<div className={styles.wave}></div>
+
+	<div className={styles.waveRed}></div>
+	<div className={styles.waveGreen}></div>
+	<div className={styles.waveYellow}></div>
 
 	</div>
     </>

@@ -75,7 +75,7 @@
   height: 200%;
   border-radius: 50%;
   background-color: #fff;
-  opacity: 0.5;
+  opacity: 0.7;
   animation-name: wave-animation;
   animation-duration: 4s;
   animation-timing-function: ease-in-out;
@@ -83,15 +83,124 @@
 }
 
 .wave::before {
-  left: -50%;
+  left: -100%;
   animation-delay: 0s;
 }
 
 .wave::after {
   left: 0%;
+  animation-delay: 3s;
+}
+.waveRed {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 400px; /* adjust the width as needed */
+  height: 400px; /* adjust the height as needed */
+  border-radius: 50%;
+  overflow: hidden;
+
+}
+.waveRed::before,
+.waveRed::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 200%;
+  height: 200%;
+  border-radius: 50%;
+  background-color: #FF0000;
+  opacity: 0.7;
+  animation-name: wave-animation;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+.waveRed::before {
+  left: -100%;
+  animation-delay: 0s;
+}
+
+.waveRed::after {
+  left: 0%;
   animation-delay: 2s;
 }
 
+.waveGreen {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+
+  transform: translateX(-50%);
+  width: 400px; /* adjust the width as needed */
+  height: 400px; /* adjust the height as needed */
+  border-radius: 50%;
+  overflow: hidden;
+
+}
+.waveGreen::before,
+.waveGreen::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 200%;
+  height: 200%;
+  border-radius: 50%;
+  background-color: #00FF00;
+  opacity: 0.7;
+  animation-name: wave-animation;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+.waveGreen::before {
+  left: -100%;
+  animation-delay: 0s;
+}
+
+.waveGreen::after {
+  left: 100%;
+  animation-delay: 5s;
+}
+
+.waveYellow {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+
+  transform: translateX(-50%);
+  width: 400px; /* adjust the width as needed */
+  height: 400px; /* adjust the height as needed */
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.waveYellow::before,
+.waveYellow::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 200%;
+  height: 200%;
+  border-radius: 50%;
+  background-color: #FFFF00;
+  opacity: 0.7;
+  animation-name: wave-animation;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.waveYellow::before {
+  left: -100%;
+  animation-delay: 5s;
+}
+
+.waveYellow::after {
+  left: 50%;
+  animation-delay: 0s;
+}
 @keyframes wave-animation {
   0% {
     transform: translate(-50%, 0) scale(1);
@@ -103,9 +212,7 @@
     transform: translate(-50%, 0) scale(1);
   }
 }
-.waveRed {
-  background-color: #FF0000;
-}
+
 
 .footer {
   position: absolute;
