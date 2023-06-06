@@ -33,8 +33,15 @@ function PaperBlock () {
         }
         return (
         <div className={philPageStyles.paperWrapper}>
-        {data.map(item => (
-            <div className={philPageStyles.paperBlock}><Link className={philPageStyles.paperLink} href={item.link}>{item.title}</Link><br></br><br></br>{item.body}</div>
+        {data.map((item, index) => (
+        <div className={philPageStyles.paperBlock} key={index}>
+            <Link className={philPageStyles.paperLink} href={item.link}>
+            {item.title}
+            </Link>
+            <br />
+            <br />
+            {item.body}
+        </div>
         ))}
         </div>
         );
