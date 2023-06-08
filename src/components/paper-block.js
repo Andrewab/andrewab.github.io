@@ -1,4 +1,3 @@
-import Script from "next/script";
 import philPageStyles from '@/styles/philosophyPapersStyles.module.css';
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
