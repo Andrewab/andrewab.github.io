@@ -1,6 +1,7 @@
 import philPageStyles from '@/styles/philosophyPapersStyles.module.css';
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
+import { Console } from 'console';
 
 
 function PaperBlock () {
@@ -17,6 +18,7 @@ function PaperBlock () {
                 setLoading(false);
             }
                 catch(error) {
+                    debug("Breaking on PHILPAPERS");
                     setError(error);
                     setLoading(false);
                 }
