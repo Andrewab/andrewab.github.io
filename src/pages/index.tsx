@@ -17,16 +17,7 @@ export default function Home() {
     <header className={styles.header}>
       <div>Welcome to Andrew Blanchettes Website!</div>
     </header>
-    <div className={styles.myNavBar}>
-    <Link href='philosophyPapers'  className={styles.myNavBarButton}>My Philosophy Papers</Link>
-    </div>
-	<div className={styles.waveContainer}>
 
-	<div className={styles.waveRed}></div>
-	<div className={styles.waveGreen}></div>
-	<div className={styles.waveYellow}></div>
-
-	</div>
     </>
   )
 }
