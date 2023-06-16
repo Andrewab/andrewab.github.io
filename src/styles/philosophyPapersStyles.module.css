@@ -3,19 +3,18 @@
     position: relative;
     background: linear-gradient(to top, #345555, #345555, #242425);
     padding: 100px;
-    height: 200px;
     font-family:  Georgia;
     color: white;
     font-size: 24px;
     font-style: oblique;
     text-align: center;
-    top: -20px;
+
     z-index: 3;
   }
   .myBackground {
     background: linear-gradient(to bottom, #345555 25%, #4d6e6d 50%, #b0c8c9 75%,#ffffff 100%);
     position: absolute;
-    height: 1000px;
+    height: 100%;
     bottom: 0px;
     width: 100%;
     background-color: gray;
