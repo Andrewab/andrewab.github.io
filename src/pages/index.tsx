@@ -7,7 +7,7 @@ import Link from'next/link'
 export default function Home() {
   return (
     <>
-      <header>
+      <header className={styles.header}>
         <title>Andrews Website</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
