@@ -17,7 +17,6 @@ function PaperBlock () {
                 setLoading(false);
             }
                 catch(error) {
-                    debug("Breaking on PHILPAPERS");
                     setError(error);
                     setLoading(false);
                 }

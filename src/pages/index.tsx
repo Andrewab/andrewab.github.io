@@ -16,7 +16,8 @@ export default function Home() {
     </header>
     <div className={styles.myNavBar}>
     <Link href='philosophyPapers'  className={styles.myNavBarButton}>My Philosophy Papers</Link>
-    </div>
+    <Link href='20Questions' className={styles.myNavBarButton}>20 Questions Game</Link>    
+</div>
 	<div className={styles.waveContainer}>
 
 	<div className={styles.waveRed}></div>
