@@ -8,11 +8,11 @@ export default function Home() {
   return (
     <>
       <header className={styles.header}>
-        <title>Andrews Website</title>
+        <title>Aspens' Website</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
             <div className={styles.footer}></div>
-      <div>Welcome to Andrew Blanchettes Website!</div>
+      <div>Welcome to Aspens' Website!</div>
     </header>
     <div className={styles.myNavBar}>
     <Link href='philosophyPapers'  className={styles.myNavBarButton}>My Philosophy Papers</Link>
